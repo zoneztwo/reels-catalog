@@ -1,3 +1,10 @@
+// --- NODE 18 POLYFILL FOR UNDICI/FETCH ---
+const { File } = require('buffer');
+if (!global.File) {
+    global.File = File;
+}
+// -----------------------------------------
+
 const express = require('express');
 const cors = require('cors');
 const ogs = require('open-graph-scraper');
