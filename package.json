@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "build": "echo 'Build not required for server-only deployment'"
+    "build": "node -e \"process.exit(0)\""
   },
   "engines": {
     "node": ">=18.0.0"
